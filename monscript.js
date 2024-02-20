@@ -1,7 +1,21 @@
+window.addEventListener("resize", () => selectImg());
 
+let carrouselImages = document.querySelectorAll('.carrousel_img_div');;
 
-const carrouselImages = document.querySelectorAll('.carrousel_img_div');
-
+function selectImg() {
+    carrouselImages.forEach(element => {
+        element.classList.add('notActive');
+        element.classList.remove('active');
+        showNextImage();
+    });
+    if (window.innerWidth < 600) {
+        carrouselImages = document.querySelectorAll('.carrousel_img_div_petit');
+        console.log("petit");
+    } else {
+        carrouselImages = document.querySelectorAll('.carrousel_img_div_grand');
+        console.log("grand");
+    }
+}
 
 let currentImageIndex = 0;
 
@@ -14,8 +28,19 @@ function showNextImage() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    showNextImage();
+    if (window.innerWidth < 600) {
 
-    setInterval(showNextImage, 3000);
+
+
+        carrouselImages = document.querySelectorAll('.carrousel_img_div_petit');
+    } else {
+
+        carrouselImages = document.querySelectorAll('.carrousel_img_div_grand');
+
+    }
+    showNextImage();
+    setInterval(showNextImage, 1000);
 });
+
+
 
