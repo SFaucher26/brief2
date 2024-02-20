@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Lien fontawesome-->
     <link
       rel="stylesheet"
@@ -13,44 +13,51 @@
     />
     <!--Fin du lien fontawesome-->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="monscript.js" defer></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-          <label id="burger" for="toggle"><i class="fa-solid fa-bars"></i></label>
-          <input type="checkbox" id="toggle" />
-          
-          <div class="menu-burger">
-            <ul>
-              <li>
-                <a href="index.html">Accueil</a>
-              </li>
-              <li>
-                <a href="presentation.html">Présentation</a>
-              </li>
-              <li>
-                <a href="search.html">Recherche</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    <main>
-        <h1>CONTACT</h1>
+      <nav>
+        <label id="burger" for="toggle"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="toggle" />
 
-        <div class="container-form">
-            <form action="">
-
-
-            </form>
+        <div class="menu-burger">
+          <ul>
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a href="presentation.html">Présentation</a>
+            </li>
+            <li>
+              <a href="search.html">Recherche</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-        
+      </nav>
+    </header>
+   <main>
+      <h1>CONTACT</h1>
+      <div class="container-form">
+        <form action="" method="post">
+          <label  for="fname">Nom </label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label  for="lname">Prénom</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+          <label  for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
     </main>
-</body>
+ 
+  </body>
 </html>

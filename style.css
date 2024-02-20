@@ -1,74 +1,215 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
 }
 /*Global*/
+h1 {
+  margin-top: 100px;
+}
+body {
+  text-align: center;
+}
 /*Header => barre de navigation responsive*/
-nav {  
-    width: 100%;
-    height: 100px;
-    background: #48435C;
+nav {
+  width: 100%;
+  height: 100px;
+  background: #48435c;
 }
 nav a:hover {
-    color : #e4f438
+  color: #e4f438;
 }
 
-label, #toggle {
-    display: none;
+label,
+#toggle {
+  display: none;
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 li {
-   list-style-type: none;
-   margin-top: 30px;
+  list-style-type: none;
+  margin-top: 30px;
 }
 li > a {
-color: white;
+  color: white;
 }
 
-@media all and (max-width: 991px)
-{
-    nav
-    {
-        height: 60px;
-    }
- 
-    nav .menu-burger 
-    {
-        display: none;
-        flex-direction: column;
-        background: #5337c4;
-        height: 220px;
-    }
-    ul{
-       
-        flex-direction: column;
-        align-items: center;
-
-    }
-    label 
-    {
-        width: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        font-size: 40px;
-        color: white;
-        cursor: pointer;
-    }
-    #toggle:checked + .menu-burger {
-        display: flex;
-    }
+@media all and (max-width: 600px) {
+  nav {
+    height: 60px;
+  }
+  li {
+    list-style-type: none;
+    margin-top: 7px;
+  }
+  nav .menu-burger {
+    display: none;
+    flex-direction: column;
+    background: #4d4c4f;
+    height: 120px;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  ul > li > a {
+    offset-distance: 12px;
+    line-height: 12px;
+  }
+  label {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  #toggle:checked + .menu-burger {
+    display: flex;
+  }
 }
 
-/* page : ----------*/
+/* PAGE ACCUEIL */
+
+/* CARROUSEL */
+.carrousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.carrousel_img_div {
+  height: 400px;
+  width: 300px;
+}
+
+.carrousel_img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.active {
+  display: block;
+}
+
+.notActive {
+  display: none;
+}
+
+/* CARROUSEL FIN ----------------------------------------*/
+
+/* ACCUEIL CHOIX */
+
+.accueil_choix {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ACCUEIL CHOIX FIN ------------------------------------*/
+
+/* CONTACT */
+
+.container-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #48435c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #5e5c5c;
+}
+
+form > label {
+  display: flex;
+  color: black;
+  font-size: medium;
+}
+textarea {
+  height: 50vh;
+}
+
+@media all and (max-width: 800px) {
+  .container {
+    margin: 20px;
+  }
+}
+
+/* CONTACT --------------------------------------------- */
+
+/* SEARCH */
+.container-search{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.container-search > form{
+  margin: auto; 
+  max-width: 300px
+}
+form.search input[type=text] {
+  padding: 8px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.search button {
+  float: left;
+  width: 20%;
+  padding: 11px;
+  background: #48435c;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #48435c;
+}
 
 
 
 
+
+/* SEARCH- --------------------------------------------- */

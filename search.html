@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <!--Lien fontawesome-->
     <link
       rel="stylesheet"
@@ -15,36 +15,41 @@
     <!--Fin du lien fontawesome-->
     <script src="monscript.js" defer></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-          <label id="burger" for="toggle"><i class="fa-solid fa-bars"></i></label>
-          <input type="checkbox" id="toggle" />
-          
-          <div class="menu-burger">
-            <ul>
-              <li>
-                <a href="index.html">Accueil</a>
-              </li>
-              <li>
-                <a href="presentation.html">Présentation</a>
-              </li>
-              <li>
-                <a href="search.html">Recherche</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+      <nav>
+        <label id="burger" for="toggle"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="toggle" />
 
-
+        <div class="menu-burger">
+          <ul>
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a href="presentation.html">Présentation</a>
+            </li>
+            <li>
+              <a href="search.html">Recherche</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <main>
-        <h1>RECHERCHES</h1>
+      <h1>RECHERCHES</h1>
+      <div class="container-search">
+        
+        <form class="search" action="" >
+          <input type="text" placeholder="Tapez votre recherche" name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
     </main>
-</body>
+  </body>
 </html>
