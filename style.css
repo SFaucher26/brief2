@@ -123,6 +123,22 @@ header {
 }
 /* PAGE ACCUEIL */
 
+.container_accueil {
+  padding: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: 800px) {
+  .container_accueil {
+    padding: 10px;
+    max-width: none;
+  }
+}
+
 /* CARROUSEL */
 .carrousel {
   display: flex;
@@ -187,6 +203,7 @@ header {
 @media all and (max-width: 600px) {
   .accueil_choix {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -197,7 +214,7 @@ header {
 .bouton_accueil {
   border: 10px groove #f1f1f1;
   height: 50px;
-  width: 400px;
+  width: 200px;
   background-color: #f1f1f1;
   display: flex;
   align-items: center;
@@ -208,14 +225,26 @@ header {
 
 /* CONTACT */
 
-.container-form {
+.container-form,
+.container-search {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
+  /* margin-left: 150px;
+  margin-right: 150px; */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+@media all and (max-width: 800px) {
+  .container-form {
+    padding: 10px;
+    max-width: none;
+    border-radius: 0;
+  }
 }
 
 input[type="text"],
@@ -265,12 +294,24 @@ textarea {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
+  /* margin-left: 150px;
+  margin-right: 150px; */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
   height: 1000px;
 }
+
+@media all and (max-width: 800px) {
+  .container-search {
+    padding: 10px;
+    max-width: none;
+    border-radius: 0;
+  }
+}
+
 .container-search > form {
   margin: auto;
   max-width: 300px;
@@ -322,6 +363,22 @@ form.search button:hover {
 
 /* presentation -------------------------------------- */
 
+.container_presentation {
+  padding: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: 800px) {
+  .container_presentation {
+    padding: 20px;
+    max-width: none;
+  }
+}
+
 #introduction p,
 #histoire p {
   text-align: justify;
@@ -346,16 +403,6 @@ form.search button:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.asideL img,
-.asideR img {
-  width: 200px;
-}
-
-.main_test {
-  display: flex;
-  flex-direction: row;
 }
 
 /* presentation FIN ------------------------- */
