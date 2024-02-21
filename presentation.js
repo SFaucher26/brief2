@@ -8,25 +8,25 @@ let chevaliers = [
     {
         nom: "Shiryu du Dragon",
         description: "Shiryu est le chevalier de Bronze du Dragon. Il a effectué son entrainement et obtenu son armure en Chine. Profondément épris de justice qu’il considère comme quelque chose d’absolu, il n’hésite jamais à mettre sa vie en jeu pour la défendre.",
-        imgUrl: "./img/Shiryu.webp",
+        imgUrl: "./img/Shiryu2.webp",
         imgAlt: "image de Shiryu"
     },
     {
         nom: "Hyôga du Cygne",
         description: "Hyôga a effectué son entrainement en Sibérie. Cachant un douloureux passé, il décide de devenir le chevalier de Bronze du Cygne pour acquérir la force nécessaire, afin de pouvoir plonger dans l’eau glacée et se rendre sur le tombeau de sa mère. Cette dernière repose dans une épave au fond de la mer de glace, suite au naufrage du bateau les conduisant au Japon.",
-        imgUrl: "./img/Hyoga.webp",
+        imgUrl: "./img/Hyoga2.webp",
         imgAlt: "image de Hyôga"
     },
     {
         nom: "Shun d’Andromède",
         description: "Shun est le chevalier de Bronze d’Andromède et le frère d’Ikki. Malgré un tempérament calme et foncièrement pacifiste, il serait le plus puissant des chevaliers de Bronze. Il déteste se battre et tente toujours de raisonner son ennemi avant de recourir à la force.",
-        imgUrl: "./img/Shun.webp",
+        imgUrl: "./img/Shun2.webp",
         imgAlt: "image de Shun"
     },
     {
         nom: "Ikki du Phoenix",
         description: "Ikki est un cas un peu particulier. Chevalier de Bronze du Phénix, il est d’abord un ennemi qui cherche à s’emparer de l’armure d’Or du Sagittaire et à conquérir le monde. Il se rallie à Athéna en se rendant compte de sa méprise. Ne faisant pas réellement partie du « noyau dur » des chevaliers de Bronze, il apparait quand bon lui semble et est indépendant, comparé aux autres.",
-        imgUrl: "./img/Ikki.webp",
+        imgUrl: "./img/Ikki2.webp",
         imgAlt: "image de Ikki"
     }
 ];

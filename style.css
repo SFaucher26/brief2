@@ -70,7 +70,7 @@ header {
   display: flex;
   flex-direction: row;
   height: 100px;
-  background: #1c0286d5;
+  background: #1c0286;
   position: sticky;
 }
 .menu-burger > ul {
