@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
     <!--Fin du lien Google font-->
-    <script src="monscript.js" defer></script>
+    <script src="search.js" defer></script>
     <title>Page recherche</title>
   </head>
   <body>
@@ -59,19 +59,19 @@
     </header>
 
     <main>
-      <h1>RECHERCHES</h1>
+      <h1 class="kanit-medium">RECHERCHES</h1>
       <div class="container-search">
-        
-        <form class="search" action="" >
-          <input type="text" placeholder="Tapez votre recherche" name="search" />
+        <h2>Recherche par le nom des chevaliers : </h2>
+        <form class="search" id="recherche" >
+          <input type="text" placeholder="Tapez votre recherche" name="rechercheInput" />
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
-
-        <div id="tableau-cartes" >
-          <!--emplacement des cartes ajoutées en JS-->
-        </div>
-
+        <div id="personnages"></div>
       </div>
+      
+          
+        
+      
     </main>
   </body>
 </html>

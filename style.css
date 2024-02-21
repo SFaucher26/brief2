@@ -29,13 +29,14 @@ body {
   color: white;
   background-image: url("./img/fond.jpg");
   background-size: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Header => barre de navigation responsive*/
 nav {
   width: 100%;
   height: 100px;
-  background: #48435c;
+  background: #1c0286d5;
 }
 
 nav > ul > li > a:hover {
@@ -64,7 +65,8 @@ header {
   display: flex;
   flex-direction: row;
   height: 100px;
-  background: #48435c;
+  background: #1c0286d5;
+  position: sticky;
 }
 .menu-burger > ul {
   display: flex;
@@ -84,14 +86,21 @@ header {
   nav {
     height: 60px;
   }
+  header > a > img {
+    width: 100px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
   .menu-burger > ul > li {
     list-style-type: none;
-    margin-top: 7px;
+    margin-top: 4px;
   }
   nav .menu-burger {
     display: none;
     flex-direction: column;
-    /* background: #4d4c4f; */
+    /* background: #1c0286d5; */
     height: 120px;
   }
   .menu-burger > ul {
@@ -99,8 +108,8 @@ header {
     align-items: center;
   }
   .menu-burger > ul > li > a {
-    offset-distance: 12px;
     line-height: 12px;
+    font-size: 20px;
   }
   label {
     width: 30px;
@@ -228,7 +237,8 @@ header {
 .container-form,
 .container-search {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #1c0286d5;
+  opacity: 0.7;
   padding: 50px;
   /* margin-left: 150px;
   margin-right: 150px; */
@@ -274,7 +284,7 @@ input[type="submit"]:hover {
 
 form > label {
   display: flex;
-  color: black;
+  color: white;
   font-size: medium;
 }
 textarea {
@@ -292,7 +302,8 @@ textarea {
 /* SEARCH */
 .container-search {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #1c0286d5;
+  opacity: 0.7;
   padding: 50px;
   /* margin-left: 150px;
   margin-right: 150px; */
@@ -302,6 +313,10 @@ textarea {
   margin-top: 30px;
   margin-bottom: 30px;
   height: 1000px;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
 }
 
 @media all and (max-width: 800px) {
@@ -313,8 +328,9 @@ textarea {
 }
 
 .container-search > form {
-  margin: auto;
-  max-width: 300px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  
 }
 form.search input[type="text"] {
   padding: 8px;
@@ -323,6 +339,7 @@ form.search input[type="text"] {
   float: left;
   width: 80%;
   background: #f1f1f1;
+  align-self: flex-start;
 }
 
 form.search button {
