@@ -26,16 +26,16 @@ label,
   display: none;
 }
 
-ul {
+.menu-burger > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-li {
+.menu-burger > ul > li {
   list-style-type: none;
   margin-top: 30px;
 }
-li > a {
+.menu-burger > ul > li > a {
   color: white;
 }
 
@@ -43,7 +43,7 @@ li > a {
   nav {
     height: 60px;
   }
-  li {
+  .menu-burger > ul > li {
     list-style-type: none;
     margin-top: 7px;
   }
@@ -53,11 +53,11 @@ li > a {
     background: #4d4c4f;
     height: 120px;
   }
-  ul {
+  .menu-burger > ul {
     flex-direction: column;
     align-items: center;
   }
-  ul > li > a {
+  .menu-burger > ul > li > a {
     offset-distance: 12px;
     line-height: 12px;
   }
@@ -178,6 +178,7 @@ textarea {
   margin-right: 150px;
   margin-top: 30px;
   margin-bottom: 30px;
+  height: 1000px;
 }
 .container-search > form{
   margin: auto; 
@@ -208,7 +209,23 @@ form.search button:hover {
   background: #48435c;
 }
 
-
+.card{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  display: inline-block;
+}
+.card h2{
+  font-size: large;
+  color: #4d4c4f;
+}
+.card p{
+  font-size: 14px;
+  margin: 5px 0;
+  color: #4d4c4f;
+}
 
 
 
