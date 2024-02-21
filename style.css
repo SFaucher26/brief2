@@ -10,6 +10,9 @@ h1 {
 }
 body {
   text-align: center;
+  background-image: url("./img/fond.jpg");
+  background-size: auto;
+  color: white;
 }
 /*Header => barre de navigation responsive*/
 nav {
@@ -129,16 +132,33 @@ label,
   display: none;
 }
 
-@media all and (max-width: 600px) {
-}
-
 /* CARROUSEL FIN ----------------------------------------*/
 
 /* ACCUEIL CHOIX */
 
 .accueil_choix {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media all and (max-width: 600px) {
+  .accueil_choix {
+    flex-direction: column;
+  }
+}
+
+.accueil_choix a {
+  margin: 20px;
+}
+
+.bouton_accueil {
+  border: 10px groove #f1f1f1;
+  height: 50px;
+  width: 400px;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -199,7 +219,7 @@ textarea {
 /* CONTACT --------------------------------------------- */
 
 /* SEARCH */
-.container-search{
+.container-search {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 50px;
@@ -209,11 +229,11 @@ textarea {
   margin-bottom: 30px;
   height: 1000px;
 }
-.container-search > form{
-  margin: auto; 
-  max-width: 300px
+.container-search > form {
+  margin: auto;
+  max-width: 300px;
 }
-form.search input[type=text] {
+form.search input[type="text"] {
   padding: 8px;
   font-size: 17px;
   border: 1px solid grey;
@@ -238,7 +258,7 @@ form.search button:hover {
   background: #48435c;
 }
 
-.card{
+.card {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
@@ -246,16 +266,54 @@ form.search button:hover {
   width: 200px;
   display: inline-block;
 }
-.card h2{
+.card h2 {
   font-size: large;
   color: #4d4c4f;
 }
-.card p{
+.card p {
   font-size: 14px;
   margin: 5px 0;
   color: #4d4c4f;
 }
 
-
-
 /* SEARCH- --------------------------------------------- */
+
+/* presentation -------------------------------------- */
+
+#introduction p,
+#histoire p {
+  text-align: justify;
+}
+
+.personnage {
+  border: 10px groove #f1f1f1;
+  background-color: #f1f1f1;
+  color: black;
+  display: flex;
+  width: 600px;
+  margin: 10px;
+}
+
+.personnage_detail_histoire {
+  text-align: justify;
+  margin: 10px;
+}
+
+#personnages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.asideL img,
+.asideR img {
+  width: 200px;
+}
+
+.main_test {
+  display: flex;
+  flex-direction: row;
+}
+
+/* presentation FIN ------------------------- */
