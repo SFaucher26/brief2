@@ -454,3 +454,9 @@ footer {
   background-color: #1c0286;
   height: 25px;
 }
+
+@media all and (max-width: 600px) {
+  .container-search .personnage {
+    width: auto;
+  }
+}
