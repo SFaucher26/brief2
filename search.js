@@ -53,8 +53,6 @@ let form = document.getElementById("recherche");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  
-
   //je récupère les datas entrées par l'utilisateur dans l'input du formulaire
   const data = Object.fromEntries(new FormData(e.target));
   
