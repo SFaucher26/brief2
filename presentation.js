@@ -2,13 +2,13 @@ let chevaliers = [
     {
         nom: "Seiya de Pégase",
         description: "Seiya est le héros principal de cette histoire. Chevalier de Bronze de Pégase, il a obtenu son armure en Grèce au sein même du Sanctuaire. Sa motivation pour aller suivre l’entraînement de Chevalier est de pouvoir, après avoir obtenu l’armure de Pégase, retrouver sa sœur de qui il a été séparé de force.",
-        imgUrl: "./img/seiya.webp",
+        imgUrl: "/img/seiya.webp",
         imgAlt: "image de Seiya"
     },
     {
         nom: "Shiryu du Dragon",
         description: "Shiryu est le chevalier de Bronze du Dragon. Il a effectué son entrainement et obtenu son armure en Chine. Profondément épris de justice qu’il considère comme quelque chose d’absolu, il n’hésite jamais à mettre sa vie en jeu pour la défendre.",
-        imgUrl: "./img/Shiryu2.webp",
+        imgUrl: "/img/Shiryu2.webp",
         imgAlt: "image de Shiryu"
     },
     {

@@ -245,7 +245,6 @@ header {
 .container-search {
   border-radius: 5px;
   background-color: #1c0286d5;
-  opacity: 0.7;
   padding: 50px;
   /* margin-left: 150px;
   margin-right: 150px; */
@@ -274,6 +273,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 input[type="submit"] {
@@ -310,7 +310,6 @@ textarea {
 .container-search {
   border-radius: 5px;
   background-color: #1c0286d5;
-  opacity: 0.7;
   padding: 50px;
   /* margin-left: 150px;
   margin-right: 150px; */
@@ -436,3 +435,10 @@ form.search button:hover {
 }
 
 /* presentation FIN ------------------------- */
+
+/* footer */
+
+footer {
+  background-color: #1c0286;
+  height: 25px;
+}
