@@ -22,6 +22,11 @@ h1 {
   color: white;
   margin-bottom: 30px;
 }
+
+h2 {
+  padding: 40px 0 20px 0;
+}
+
 body {
   text-align: center;
   background-image: url("./img/fond.jpg");
@@ -36,7 +41,7 @@ body {
 nav {
   width: 100%;
   height: 100px;
-  background: #1c0286d5;
+  background: #1c0286;
 }
 
 nav > ul > li > a:hover {
@@ -64,7 +69,8 @@ header {
   display: flex;
   flex-direction: row;
   height: 100px;
-  background: #1c0286d5;
+  background: #1c0286;
+  position: sticky;
 }
 .menu-burger > ul {
   display: flex;
@@ -129,6 +135,23 @@ header {
 }
 /* PAGE ACCUEIL */
 
+.container_accueil {
+  padding: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #1c0286d5;
+}
+
+@media all and (max-width: 800px) {
+  .container_accueil {
+    padding: 10px;
+    max-width: none;
+  }
+}
+
 /* CARROUSEL */
 .carrousel {
   display: flex;
@@ -163,8 +186,8 @@ header {
 }
 
 .carrousel_img_div_grand {
-  height: 500px;
-  width: 800px;
+  height: 420px;
+  width: 700px;
 }
 
 .carrousel_img {
@@ -193,6 +216,7 @@ header {
 @media all and (max-width: 600px) {
   .accueil_choix {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -203,26 +227,38 @@ header {
 .bouton_accueil {
   border: 10px groove #f1f1f1;
   height: 50px;
-  width: 400px;
+  width: 260px;
   background-color: #f1f1f1;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 
 /* ACCUEIL CHOIX FIN ------------------------------------*/
 
 /* CONTACT */
 
-.container-form {
+.container-form,
+.container-search {
   border-radius: 5px;
   background-color: #1c0286d5;
-  opacity: 0.7;
   padding: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
+  /* margin-left: 150px;
+  margin-right: 150px; */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+@media all and (max-width: 800px) {
+  .container-form {
+    padding: 10px;
+    max-width: none;
+    border-radius: 0;
+  }
 }
 
 input[type="text"],
@@ -231,10 +267,24 @@ textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
+
   box-sizing: border-box;
-  margin-top: 6px;
+  /* margin-top: 6px; */
   margin-bottom: 16px;
   resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search input[type="text"] {
+  border-radius: 4px 0 0 4px;
+}
+
+textarea {
+  border-radius: 4px;
+  margin-top: 6px;
+}
+input[type="text"] {
+  height: 44px;
 }
 
 input[type="submit"] {
@@ -271,22 +321,32 @@ textarea {
 .container-search {
   border-radius: 5px;
   background-color: #1c0286d5;
-  opacity: 0.7;
   padding: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
+  /* margin-left: 150px;
+  margin-right: 150px; */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
   height: 1000px;
   display: flex;
   flex-direction: column;
-  
+
   align-items: center;
 }
+
+@media all and (max-width: 800px) {
+  .container-search {
+    padding: 10px;
+    max-width: none;
+    border-radius: 0;
+  }
+}
+
 .container-search > form {
   margin-top: 20px;
   margin-bottom: 100px;
-  
 }
 form.search input[type="text"] {
   padding: 8px;
@@ -308,6 +368,7 @@ form.search button {
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
+  border-radius: 0 4px 4px 0;
 }
 
 form.search button:hover {
@@ -336,6 +397,23 @@ form.search button:hover {
 
 /* presentation -------------------------------------- */
 
+.container_presentation {
+  padding: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #1c0286d5;
+}
+
+@media all and (max-width: 800px) {
+  .container_presentation {
+    padding: 20px;
+    max-width: none;
+  }
+}
+
 #introduction p,
 #histoire p {
   text-align: justify;
@@ -355,6 +433,12 @@ form.search button:hover {
   margin: 10px;
 }
 
+@media all and (max-width: 600px) {
+  .personnage {
+    flex-direction: column;
+  }
+}
+
 #personnages {
   display: flex;
   flex-direction: row;
@@ -362,14 +446,11 @@ form.search button:hover {
   justify-content: center;
 }
 
-.asideL img,
-.asideR img {
-  width: 200px;
-}
-
-.main_test {
-  display: flex;
-  flex-direction: row;
-}
-
 /* presentation FIN ------------------------- */
+
+/* footer */
+
+footer {
+  background-color: #1c0286;
+  height: 25px;
+}
