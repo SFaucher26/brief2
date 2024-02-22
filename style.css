@@ -269,11 +269,24 @@ textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
+
   box-sizing: border-box;
-  margin-top: 6px;
+  /* margin-top: 6px; */
   margin-bottom: 16px;
   resize: vertical;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.search input[type="text"] {
+  border-radius: 4px 0 0 4px;
+}
+
+textarea {
+  border-radius: 4px;
+  margin-top: 6px;
+}
+input[type="text"] {
+  height: 44px;
 }
 
 input[type="submit"] {
@@ -357,6 +370,7 @@ form.search button {
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
+  border-radius: 0 4px 4px 0;
 }
 
 form.search button:hover {
