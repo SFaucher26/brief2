@@ -392,7 +392,9 @@ form.search button:hover {
   margin: 5px 0;
   color: #4d4c4f;
 }
-
+#personnages > p{
+  font-size: 25px;
+}
 /* SEARCH- --------------------------------------------- */
 
 /* presentation -------------------------------------- */

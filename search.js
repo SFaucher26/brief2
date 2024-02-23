@@ -68,6 +68,7 @@ form.addEventListener("submit", (e) => {
   sectionPersonnages.innerHTML = "";
 
   //Afficher les chevaliers filtrés
+  if(filteredChevaliers.length > 0){
   filteredChevaliers.forEach(chevalier => {
     let divPersonnage = document.createElement("div");
     divPersonnage.classList.add("personnage");
@@ -97,6 +98,12 @@ form.addEventListener("submit", (e) => {
     divPersonnage.appendChild(divDetail);
     sectionPersonnages.appendChild(divPersonnage);
   });
+  }else{
+    //j'affiche un message indiquant qu'il n'y a pas de résultat
+    const message = document.createElement("p");
+    message.textContent = "Pas de résultat pour cette recherche !";
+    sectionPersonnages.appendChild(message);
+  }
 });
 
 /*fin du script de la page recherche------------------------------*/
